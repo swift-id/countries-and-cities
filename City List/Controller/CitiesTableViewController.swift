@@ -59,14 +59,14 @@ class CitiesTableViewController: UITableViewController {
                                     City(name: "Bandung"),
                                     City(name: "Surabaya"),
                                     City(name: "Malang"),
-                                    ])
+                                ])
         )
         
         countries.append(Country(name: "Japan",
                                  cities: [
                                     City(name: "Tokyo"),
                                     City(name: "Kyoto")
-            ])
+                                ])
         )
         
         countries.append(Country(name: "Brazil",
@@ -74,7 +74,7 @@ class CitiesTableViewController: UITableViewController {
                                     City(name: "Rio de Janeiro"),
                                     City(name: "San Paulo"),
                                     City(name: "Ibiza")
-            ])
+                                ])
         )
     }
 }

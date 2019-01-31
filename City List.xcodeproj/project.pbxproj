@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		4A02BB7A2202AAEA0022E483 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A02BB792202AAEA0022E483 /* AppDelegate.swift */; };
-		4A02BB7C2202AAEA0022E483 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A02BB7B2202AAEA0022E483 /* ViewController.swift */; };
 		4A02BB7F2202AAEA0022E483 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A02BB7D2202AAEA0022E483 /* Main.storyboard */; };
 		4A02BB812202AAEB0022E483 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A02BB802202AAEB0022E483 /* Assets.xcassets */; };
 		4A02BB842202AAEB0022E483 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A02BB822202AAEB0022E483 /* LaunchScreen.storyboard */; };
+		4A02BB8C2202ABE30022E483 /* CitiesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A02BB8B2202ABE30022E483 /* CitiesTableViewController.swift */; };
+		4A02BB912202AD030022E483 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A02BB902202AD030022E483 /* City.swift */; };
+		4A02BB932202AFE90022E483 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A02BB922202AFE90022E483 /* Country.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4A02BB762202AAEA0022E483 /* City List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "City List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A02BB792202AAEA0022E483 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4A02BB7B2202AAEA0022E483 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4A02BB7E2202AAEA0022E483 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4A02BB802202AAEB0022E483 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A02BB832202AAEB0022E483 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A02BB852202AAEB0022E483 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A02BB8B2202ABE30022E483 /* CitiesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesTableViewController.swift; sourceTree = "<group>"; };
+		4A02BB902202AD030022E483 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		4A02BB922202AFE90022E483 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,40 @@
 		4A02BB782202AAEA0022E483 /* City List */ = {
 			isa = PBXGroup;
 			children = (
+				4A02BB8F2202AC190022E483 /* Controller */,
+				4A02BB8E2202ABFC0022E483 /* Model */,
+				4A02BB8D2202ABEB0022E483 /* View */,
 				4A02BB792202AAEA0022E483 /* AppDelegate.swift */,
-				4A02BB7B2202AAEA0022E483 /* ViewController.swift */,
-				4A02BB7D2202AAEA0022E483 /* Main.storyboard */,
 				4A02BB802202AAEB0022E483 /* Assets.xcassets */,
-				4A02BB822202AAEB0022E483 /* LaunchScreen.storyboard */,
 				4A02BB852202AAEB0022E483 /* Info.plist */,
 			);
 			path = "City List";
+			sourceTree = "<group>";
+		};
+		4A02BB8D2202ABEB0022E483 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4A02BB7D2202AAEA0022E483 /* Main.storyboard */,
+				4A02BB822202AAEB0022E483 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4A02BB8E2202ABFC0022E483 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4A02BB902202AD030022E483 /* City.swift */,
+				4A02BB922202AFE90022E483 /* Country.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4A02BB8F2202AC190022E483 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4A02BB8B2202ABE30022E483 /* CitiesTableViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +165,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A02BB7C2202AAEA0022E483 /* ViewController.swift in Sources */,
+				4A02BB932202AFE90022E483 /* Country.swift in Sources */,
+				4A02BB912202AD030022E483 /* City.swift in Sources */,
+				4A02BB8C2202ABE30022E483 /* CitiesTableViewController.swift in Sources */,
 				4A02BB7A2202AAEA0022E483 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +315,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5NULCBGY98;
 				INFOPLIST_FILE = "City List/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +333,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5NULCBGY98;
 				INFOPLIST_FILE = "City List/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
